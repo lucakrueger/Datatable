@@ -75,38 +75,9 @@ func (this *Listener) EnterSize(c *parser.SizeContext) {
 	this.SetSecondary(c.GetText())
 }
 
-// EnterChunk is called when entering the chunk production.
-func (this *Listener) EnterChunk(c *parser.ChunkContext) {
-
-}
-
-// EnterDeclaration is called when entering the declaration production.
-func (this *Listener) EnterDeclaration(c *parser.DeclarationContext) {
-
-}
-
-// EnterBlock is called when entering the block production.
-func (this *Listener) EnterBlock(c *parser.BlockContext) {
-
-}
-
 // EnterDirect is called when entering the direct production.
 func (this *Listener) EnterDirect(c *parser.DirectContext) {
 	this.SetDirect(c.GetText())
-}
-
-// EnterBody is called when entering the body production.
-func (this *Listener) EnterBody(c *parser.BodyContext) {
-
-}
-
-// EnterExpression is called when entering the expression production.
-func (this *Listener) EnterExpression(c *parser.ExpressionContext) {
-
-}
-
-// ExitDefinition is called when exiting the definition production.
-func (this *Listener) ExitDefinition(c *parser.DefinitionContext) {
 }
 
 // ExitTypeDeclaration is called when exiting the typeDeclaration production.
@@ -114,59 +85,14 @@ func (this *Listener) ExitTypeDeclaration(c *parser.TypeDeclarationContext) {
 	this.AddType()
 }
 
-// ExitAtom is called when exiting the atom production.
-func (this *Listener) ExitAtom(c *parser.AtomContext) {
-
-}
-
-// ExitName is called when exiting the name production.
-func (this *Listener) ExitName(c *parser.NameContext) {
-
-}
-
-// ExitTypeDefinition is called when exiting the typeDefinition production.
-func (this *Listener) ExitTypeDefinition(c *parser.TypeDefinitionContext) {
-
-}
-
 // ExitFieldType is called when exiting the fieldType production.
 func (this *Listener) ExitFieldType(c *parser.FieldTypeContext) {
 	this.SetFieldDef(false)
 }
 
-// ExitSize is called when exiting the size production.
-func (this *Listener) ExitSize(c *parser.SizeContext) {
-
-}
-
-// ExitChunk is called when exiting the chunk production.
-func (this *Listener) ExitChunk(c *parser.ChunkContext) {
-
-}
-
-// ExitDirect is called when exiting the direct production.
-func (this *Listener) ExitDirect(c *parser.DirectContext) {
-
-}
-
 // ExitDeclaration is called when exiting the declaration production.
 func (this *Listener) ExitDeclaration(c *parser.DeclarationContext) {
 	this.SetMeta(false)
-}
-
-// ExitBlock is called when exiting the block production.
-func (this *Listener) ExitBlock(c *parser.BlockContext) {
-
-}
-
-// ExitBody is called when exiting the body production.
-func (this *Listener) ExitBody(c *parser.BodyContext) {
-
-}
-
-// ExitExpression is called when exiting the expression production.
-func (this *Listener) ExitExpression(c *parser.ExpressionContext) {
-
 }
 
 // ExitField is called when exiting the field production.
