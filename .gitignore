@@ -1,0 +1,6 @@
+# Folders #
+tests/
+
+# Unneccesarry Files #
+*.bat
+*.png
