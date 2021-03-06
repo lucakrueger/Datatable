@@ -1,0 +1,40 @@
+Config : Type {
+    Head : Group {
+        Signature: string ? "cfg0"
+        Version: int-8 ? 0
+        meta : Group {
+            @Name: string
+            @Author: string
+        }
+        FieldCount: int ? 0
+    }
+    Body : Group {
+        Fields: FieldCount-Pair
+    }
+    meta : Meta {
+        Package: "tests"
+        Set: "(key string, value string) {
+            for index, fkey := range this.Fields {
+                if fkey.Key == key {
+                    this.Fields[index].Value = value
+                    return
+                }
+            }
+            this.Fields = append(this.Fields, Pair{key, value})
+            this.FieldCount++
+        }"
+        Get: "(key string) string {
+            for index, fkey := range this.Fields {
+                if fkey.Key == key {
+                    return this.Fields[index].Value
+                }
+            }
+            return ''
+        }"
+    }
+}
+
+Pair : Type {
+    Key: string
+    Value: string
+}
