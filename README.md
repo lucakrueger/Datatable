@@ -6,4 +6,4 @@
 
 ## How to use
 1. Create a datatable file (*.dt)
-2. run command: dtm <input> <output> <target> (optional) <std> (optional)
+2. run command: dtm $input $output $target (optional) $std (optional)
