@@ -21,4 +21,4 @@ Currently only GO and JSON are supported
 ## Building
 1. Download source code
 2. Extract files
-3. Run: `go build -o bin/ ./go/dtm.go`
+3. Run: `go build -o bin/ ./dtm/dtm.go`
