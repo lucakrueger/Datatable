@@ -13,7 +13,12 @@ The main target is GO, but by compiling to JSON, you can easliy create a transla
 
 ## How to use
 1. Create a datatable file (*.dt)
-2. run: `dtm input output target (optional) std (optional)`
+2. Run: `dtm input output target (optional) std (optional)`
 
 ## Targets
 Currently only GO and JSON are supported
+
+## Building
+1. Download source code
+2. Extract files
+3. Run: `go build -o bin/ ./go/dtm.go`
