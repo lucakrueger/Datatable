@@ -1,6 +1,6 @@
 # Datatable
 Datatable is a simple tool to create a wide variety of binary datatypes, which then can be integrated seamlessly into various platforms.
-The main target is GO, but by compiling to JSON, you can easliy create a translation to your language of choic
+The main target is GO, but by compiling to JSON, you can easliy create a translation to your language of choice
 
 ## Get Started
 [Get Started Guide](https://github.com/lucakrueger/Datatable/wiki/Get-Started)
